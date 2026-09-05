@@ -1,0 +1,24 @@
+# Reference values confirmed in the final paper/poster.
+# This file is documentation for the final experiment, not a verbatim runtime parameter dump.
+experiment:
+  lidar:
+    fov_deg_approx: 90.0
+    lateral_min_m: -0.3
+    lateral_max_m: 0.3
+    forward_range_m_approx: 2.0
+    local_window_points: 5
+  speed_estimation:
+    sampling_interval_s_approx: 0.2
+    temporal_window: 5
+    temporal_filter: median
+  ttc:
+    threshold_s: 3.0
+    decision_states: [STOP, KEEP]
+  activation_zone:
+    description: "approximately 1 m before/behind the left-turn stop-line region as described in the final paper"
+  validation:
+    scenarios:
+      - {ego_mps: 0.5, target_mps: 0.5, expected: STOP}
+      - {ego_mps: 0.8, target_mps: 0.8, expected: STOP}
+      - {ego_mps: 0.5, target_mps: 0.8, expected: KEEP}
+      - {ego_mps: 0.8, target_mps: 0.5, expected: KEEP}
