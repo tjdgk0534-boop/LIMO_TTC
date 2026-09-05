@@ -1,0 +1,29 @@
+# ROS2 / colcon
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# ROS data / media
+*.db3
+*.mcap
+*.bag
+*.mp4
+*.avi
+
+# Logs / local datasets
+*.csv
+!results/README.md
+
+# IDE / local
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.env
+*.key
+*.pem
