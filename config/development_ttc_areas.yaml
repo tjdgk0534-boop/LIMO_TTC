@@ -1,0 +1,11 @@
+risk_area_viz:
+  ros__parameters:
+    map_frame: "map"
+    marker_thickness: 0.05
+    alpha: 0.55
+    risk_rects: >
+      [
+        {"name":"TTC_SUBROI", "center":[35.5, -0.332],
+         "yaw_deg":0.0, "width":3.0, "height":0.556, "color":[0.2,0.8,1.0]}
+      ]
+
