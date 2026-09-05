@@ -1,0 +1,14 @@
+risk_area_viz:
+  ros__parameters:
+    map_frame: "map"
+    marker_thickness: 0.05
+    alpha: 0.65
+
+    # 네가 준 네 꼭짓점이 축정렬 직사각형 → center/width/height로 표현
+    # corners: [31.7,0.097], [31.7,-1.83], [33.7,-1.83], [33.7,0.097]
+    # center = (32.7, -0.8665), width = 2.0, height = 1.927, yaw_deg=0
+    risk_rects: >
+      [
+        {"name":"X_STOP_ZONE", "center":[31.7, -0.8665], "yaw_deg": 0.0, "width": 1.6, "height": 1.927, "color":[1.0,0.3,0.2]}
+      ]
+
